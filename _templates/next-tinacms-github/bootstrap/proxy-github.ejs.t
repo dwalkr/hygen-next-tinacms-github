@@ -1,5 +1,5 @@
 ---
-to: pages/api/proxy-github.ts
+to: pages/api/proxy-github.<%=fileExtension%>
 ---
 import { apiProxy } from 'next-tinacms-github'
 
