@@ -1,5 +1,5 @@
 ---
-to: pages/api/create-github-access-token.<%=fileExtension%>
+to: "<%=subdirectory ? `${subdirectory}/` : ''%>pages/api/create-github-access-token.<%=fileExtension%>"
 ---
 import { createAuthHandler } from 'next-tinacms-github'
 
