@@ -4,8 +4,8 @@ to: "<%=subdirectory ? `${subdirectory}/` : ''%>pages/api/create-github-access-t
 import { createAuthHandler } from 'next-tinacms-github'
 
 export default createAuthHandler(
-  process.env.GITHUB_CLIENT_ID,
-  process.env.GITHUB_CLIENT_SECRET
+  process.env.GITHUB_CLIENT_ID<%-fileExtension == 'ts' ? ' || ""' : ''%>,
+  process.env.GITHUB_CLIENT_SECRET<%-fileExtension == 'ts' ? ' || ""' : ''%>
 )
 
 
