@@ -3,4 +3,4 @@ to: "<%=subdirectory ? `${subdirectory}/` : ''%>pages/api/proxy-github.<%=fileEx
 ---
 import { apiProxy } from 'next-tinacms-github'
 
-export default apiProxy
+export default apiProxy(process.env.SIGNING_KEY)
